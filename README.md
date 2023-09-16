@@ -1,65 +1,65 @@
-# Phase 1 Project
+## Business Overview
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+Due to the increased production of original films by major companies,Microsoft wants to venture into this film industry and would like to create a new movie studio but before they get started, they have tasked me to evaluate the film industry and give them recommendations to enable them  make a decision. My recommendations are based on return on investment as a metric measure of profitability of  different movie genres both in the local and global markets, looked into most popular publisher and rating,the popularity and profitabilty  of the different kinds genres.
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+## Business Understanding
+The business understanding in this scenario involves Microsoft recognizing the opportunity to enter the film industry, specifically by establishing a new movie studio. This decision is driven by the observation that many successful companies like Netflix and Amazon are creating original video content, and Microsoft wants to leverage its resources and brand to tap into this lucrative market.
 
-## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+## Business  Objectives
 
-### Business Problem
+The main business objectives is to find out if venturing into the film industry is a viable business idea for Microsft. We  need to find out what kind of genres  they need to create to muximise on profitabity, the current market trend and generally how to set themselves apart in order to be the market leaders in this industry.
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
-### The Data
 
-In the folder `zippedData` are movie datasets from:
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+## Data Understanding
+There were four data sets provided each containing different data. The data sets were:
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+Box Office Mojo.
+IMDB.
+TheMovieDB.
+The Numbers
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+This analysis utilizes datasets acquired from three movie websites, namely Box Office Mojo, The Numbers, and IMDB.
 
-## Deliverables
 
-There are three deliverables for this project:
+  1.The first dataset, bom.movie_gross.csv, has five columns comprising of movie titles, studios, financial incomes both domestic and foreign and the release year.
+  
+  2.The second dataset , imdb.title.basics.csv, which has six columns,tconst,primary_title,original_title,start_year,runtime_minutes and genres. the reason for selecting this data set was the genre column which will enable me to analyze the most profitable and most popular genre. it also contains the runtime_minutes which enable me to find out the avarage runtime for a film. 
+  
+  3. the third dataset was imdb.title.ratings.csv, which has three columns, tconst, avaragerating and number of votes. the main reason for selecting this dataset was the avarage rating columns.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+  4.The fourth dataset, tn.movie_budgets.csv, contains information on released films, including their names, release dates, and financial data such as production budget and worldwide gross. The key variable for this dataset is the ROI, and the monetary data columns are the primary reason for selecting this dataset.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
 
-### Key Points
+## Data Analysis
+My analysis stage majorly forcused  on exploring the correlationships in the previously cleaned data and  come up with visualisation.
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+## Conclusion
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+Below are my findings from my alaysis above;
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+  1.The production budget plays a major role for  profitabitty in the film industries  . this may be attributed to major factors like  maketing marketing cost, investing investing i popular movie actors and directors  which come at a higher cost, lunguage intepretation of the original film etc.b
+  
+  2.Horror movies are the most proftable in th film industry  but we have noted that movies that falls under more than one genre are more profitable too.
+  
+  3.Popularity of a film doesn't guarantee the profitabilty of the film. From our analysis, there are some genres that were very popular in terms of votecounts but the profitabilty was lightly lower.
+  
+  4. We also noted that astrong positive correlation between domestic_gross and qorldwide_gross. this means that is a movie dose well in the local market, it will also perform well in the international market.
+  
 
-## Getting Started
+## Recomendations
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
-
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
-
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+1.Consider good budget allocation for film production as we have noted that there is strong positive correlation between production budget and both domestic_gross and worlwide_gross as this will enable you have good marketers, best producers and also reknown movie actors which will make the film production a succes and popular hence more profitabilty.
+  
+2.Divesify the genres to muximise profitability.In as much as horror movies are the most profitable, we have seen other film that have a mixute of different genres being proftable too.
+  
+3.The runtime minutes for films is averagely between 90 - 150 minutes, therefore if there's a probability of having a longer film, it's best to create them in series of between 90 - 150 minutes.
+  
+  
+ 4.Forcus on marketing the films in the  domestic market as this will determine the sucess/ profitability  of the film in the internatinal markets.As noted in our analysis, there was a strong positive correaltinship between domestic_gross and wolrwide _gross
+  
+  
+  5.. Consider the overall market trend and consumer preferences when making investment decisions in the movie industry. For example, if streaming services are becoming more popular, short documentary film is a good genre to forcus on as they  have the potential to perform well on streaming platforms. Keeping up with the latest market trends canhelp  make informed investment decisions.
